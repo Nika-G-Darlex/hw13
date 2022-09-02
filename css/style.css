@@ -1,0 +1,66 @@
+*, html, body{
+    margin:0;
+    padding:0;
+}
+body{
+   background: url(../img/fon.jpg) no-repeat;
+  background-size:cover;
+  
+ 
+}
+.siren{
+    width: 20px;
+    height: 20px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background: red;
+    position: fixed;
+    top: -12%;
+    left: 24%;
+    animation: moveSiren 1s infinite linear;
+}
+.car{
+    transform: scale(-1,1);
+    position: fixed;
+    top:70% ;
+    left:0;
+    animation: moveCar 5s infinite linear;
+}
+.wheel-1{
+    width: 60px;
+    position: fixed;
+    left: 67%;
+    top: 65%; 
+}
+.wheel-2{
+    width: 60px;
+position: fixed;
+top: 65%;
+left: 1%;
+}
+.wheel img{
+    animation: moveWheel 1s infinite linear;
+}
+@keyframes moveCar{
+    49%{
+        top: 70%;
+        left: 80%;
+        transform: scale(-1,1);
+    }
+ 50%{
+    transform: scale(1,1);
+ }
+ 100%{
+    transform: scale(1,1);
+ }
+}
+@keyframes moveWheel{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes moveSiren{
+    100%{
+background: blue;
+    }
+}
